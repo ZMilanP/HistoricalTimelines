@@ -26,11 +26,10 @@ namespace HistoricalTimelines
         protected override void OnConfiguring(DbContextOptionsBuilder options)
             => options.UseSqlServer($"Data Source={DbPath}");
     }
-    
+
     public class Entity
     {
         public int EntityId { get; set; }
-        public decimal Coordinates { get; set; }
 
         public List<Person> Persons { get; } = new();
         public List<Building> Buildings { get; } = new();
@@ -40,13 +39,11 @@ namespace HistoricalTimelines
     {
         public int NameId { get; set; }
         public string Name { get; set; }
+        public string? Title { get; set; }
         public string? Lastname { get; set; }
         public decimal Latitude { get; set; }
         public decimal Longitude { get; set; }
 
-
-        public DateOnly Time_Birth { get; set; }
-        public DateOnly? Time_Death { get; set; }    
 
         public Entity Entity { get; set; }
 
@@ -56,10 +53,6 @@ namespace HistoricalTimelines
     {
         public int NameId { get; set; }
         public string Name { get; set; }
-        public decimal Latitude { get; set; }
-        public decimal Longitude { get; set; }
-        public DateOnly Built { get; set; }
-        public DateOnly? Razed { get; set; }
         public Entity Entity { get; set; }
     }
 }
