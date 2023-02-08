@@ -11,5 +11,5 @@ present a much different challenge as their locations may cover a lot of points
 throughout their lifetimes.
 
 These information should at a further point be cross-refferenced to a geographical map
-To offer paths of movement and interractions in important historical events!
-The project is far from near completion as this is just a conceptual imagining of such a database.
+to offer paths of movement and interractions in important historical events!
+The project is far from completion as this is just a conceptual imagining of such a database.
