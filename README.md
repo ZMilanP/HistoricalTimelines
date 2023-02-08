@@ -1,6 +1,6 @@
 The idea of this project is to provide a database of historical persons and places,
 however with an added twist of geographical reference.
-To this end every entity, being living or non-living, that is static or mobile,
+To this end every entity, being living or non-living, that is - static or mobile,
 should have coordinates that correspond to a specific location.
 
 Every person and every building is a 3D object on the Earth surface,
@@ -12,3 +12,4 @@ throughout their lifetimes.
 
 These information should at a further point be cross-refferenced to a geographical map
 To offer paths of movement and interractions in important historical events!
+The project is far from near completion as this is just a conceptual imagining of such a database.
