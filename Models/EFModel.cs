@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HistoricalTimelines
+namespace HistoricalTimelines.Models
 {
     public class HistoricalEntities : DbContext
     {
@@ -19,10 +19,10 @@ namespace HistoricalTimelines
         {
             var folder = Environment.SpecialFolder.LocalApplicationData;
             var path = Environment.GetFolderPath(folder);
-            DbPath = System.IO.Path.Join(path, "deafult.db");
+            DbPath = Path.Join(path, "deafult.db");
         }
 
-       
+
         protected override void OnConfiguring(DbContextOptionsBuilder options)
             => options.UseSqlServer($"Data Source={DbPath}");
     }
@@ -47,11 +47,11 @@ namespace HistoricalTimelines
         public decimal Longitude { get; set; }
 
         public DateOnly Time_Birth { get; set; }
-        public DateOnly? Time_Death { get; set; }    
+        public DateOnly? Time_Death { get; set; }
 
         public Entity Entity { get; set; }
 
-        
+
     }
     public class Building
     {
